@@ -105,7 +105,7 @@ resource "aws_ecs_service" "demowebapp" {
   propagate_tags          = "SERVICE"
 
   #has to be done after the alb because it breaks if done out of order
-  depends_on = [aws_alb_listener.http]
+  depends_on = [aws_alb_listener.https]
 
   lifecycle {
     ignore_changes = [task_definition]

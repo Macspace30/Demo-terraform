@@ -52,11 +52,11 @@ variable "lb_port" {
   default = "80"
 }
 variable "vpc" {
-  default = "vpc-021e9730e59e957e9"
+  default = "vpc-0a98db3ed8f535c3d"
 }
 
 variable "private_subnets" {
-    default = ["subnet-0ba0f2f94bd9c56af", "subnet-0d8fe03f496d526ac"]
+    default = ["subnet-02c17f45e87af3500", "subnet-01d205641e92d71bd"]
 }
 
 
